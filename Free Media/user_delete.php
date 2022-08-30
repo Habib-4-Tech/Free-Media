@@ -9,7 +9,6 @@ if (isset($_POST['submit']))
 {
 
     $id=$_POST['Post_id'];
-    echo $id;
 
     $sql= "Delete from comments where Post_id=$id";
     $result= mysqli_query($connection, $sql);
